@@ -3,7 +3,7 @@ import { createEvent, getEvents, deleteEvent } from '../controllers/EventControl
 
 const router = Router();
 
-router.post('/', createEvent);
+router.post('/create', createEvent);
 router.get('/', getEvents);
 router.delete('/:id', deleteEvent);
 

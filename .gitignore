@@ -1,1 +1,11 @@
-node_modules
+.vscode/*
+!.vscode/settings.json
+/dist
+/build
+node_modules/
+npm-debug.log
+.env
+/test
+/tests
+*.log
+*.tsbuildinfo

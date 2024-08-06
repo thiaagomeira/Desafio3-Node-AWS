@@ -13,7 +13,7 @@ export const generatePreSignedUrl = (key: string) => {
   const params = {
     Bucket: process.env.S3_BUCKET_NAME!,
     Key: key,
-    Expires: 60 * 5, // URL válida por 5 minutos
+    Expires: 60 * 5,
   };
 
   return s3.getSignedUrl('putObject', params);
