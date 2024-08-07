@@ -1,4 +1,5 @@
 import { Request } from 'express';
+import { User } from '../../src/models/User';
 
 declare module 'express-serve-static-core' {
   interface Request {
@@ -24,3 +25,11 @@ declare module 'express-serve-static-core' {
   }
 }
 export { NextFunction };
+
+declare global {
+  namespace Express {
+    interface Request {
+      user?: User;
+    }
+  }
+}

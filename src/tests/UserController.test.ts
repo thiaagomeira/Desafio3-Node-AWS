@@ -1,4 +1,5 @@
 import { registerUser, loginUser } from '../services/AuthService';
+import { IUser } from '../models/User';
 
 describe('AuthService', () => {
   describe('registerUser', () => {
