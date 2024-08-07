@@ -2,14 +2,13 @@
   "name": "desafio-03",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "ts-node-dev --respawn --transpile-only --experimental-specifier-resolution=node src/app.ts",
+    "start": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "server": "node index.js",
     "build": "tsc",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "server": "ts-node src/app.ts"
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "aws-sdk": "^2.1668.0",
@@ -17,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "express-validator": "^7.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",
