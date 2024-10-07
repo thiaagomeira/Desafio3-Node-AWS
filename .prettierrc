@@ -1,6 +1,24 @@
 {
-    "semi": true,
-    "singleQuote": true,
-    "printWidth": 80,
-    "tabWidth": 2
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "prettier/prettier": "error",
+    "var": "off",
+    "prefer-const": "error"
   }
+}
